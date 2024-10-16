@@ -5,7 +5,8 @@
   "scripts": {
     "start": "live-server .",
     "build": "sass styles.scss style.css && postcss style.css -o style.css",
-    "dev": "concurrently \"npm run build --watch\" \"live-server .\""
+    "dev": "concurrently \"npm run build:css --watch\" \"live-server .\"",
+    "build:css": "sass styles.scss style.css && postcss style.css -o style.css"
   },
   "keywords": [],
   "author": "",
